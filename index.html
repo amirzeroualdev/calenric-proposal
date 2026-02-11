@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastisseria Ca L'Enric – Palamós</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍰</text></svg>">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Pastisseria Ca L'Enric</div>
+            <ul class="nav-links">
+                <li><a href="#inici" class="active">Inici</a></li>
+                <li><a href="#historia">La nostra història</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contacte">Contacte</a></li>
+                <li><a href="#ubicacio">Ubicació</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="theme-toggle" aria-label="Canvia tema">🌙</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inici" class="hero">
+        <div class="hero-content">
+            <h1>Benvinguts a Pastisseria Ca L'Enric</h1>
+            <p>Sabors tradicionals i artesans a Palamós</p>
+            <a href="#menu" class="btn">Explora el Menú</a>
+        </div>
+    </section>
+
+    <section id="historia" class="section">
+        <div class="container">
+            <h2>La nostra història</h2>
+            <p>Des de 1985, Pastisseria Ca L'Enric és un referent a Palamós. Elaboram productes frescos diàriament amb ingredients locals, mantenint la tradició familiar i oferint una experiència de sabor autèntic. Veniu a descobrir el nostre compromís amb la qualitat i l'artesania.</p>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <div class="container">
+            <h2>El nostre Menú</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="tot">Tot</button>
+                <button class="filter-btn" data-filter="dolcos">Dolços</button>
+                <button class="filter-btn" data-filter="begudes">Begudes</button>
+            </div>
+            <div class="menu-grid" id="menu-grid">
+                <!-- Menu items loaded via JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="section">
+        <div class="container">
+            <h2>Galeria</h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Pastissos artesans">
+                <img src="https://images.unsplash.com/photo-1607478900766-efe13248b125?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ensaimades fresques">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Pa artesà">
+                <img src="https://images.unsplash.com/photo-1551782450-17144efb5723?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Coca de recapte">
+                <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Cafè i pastissos">
+                <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Suc natural">
+            </div>
+        </div>
+    </section>
+
+    <section id="contacte" class="section">
+        <div class="container">
+            <h2>Contacte</h2>
+            <form id="contact-form">
+                <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                <input type="email" id="email" name="email" placeholder="Correu electrònic" required>
+                <textarea id="missatge" name="missatge" placeholder="Missatge" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+            <div id="form-messages"></div>
+        </div>
+    </section>
+
+    <section id="ubicacio" class="section">
+        <div class="container">
+            <h2>Ubicació</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.123456789012!2d3.129999!3d41.850000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba123456789abc%3A0xdef123456789!2sPalam%C3%B3s%2C%20Girona!5e0!3m2!1sca!2ses!4v1234567890123!5m2!1sca!2ses" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <button id="torna-dalt" aria-label="Torna a dalt">↑</button>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Pastisseria Ca L'Enric – Palamós. Tots els drets reservats.</p>
+        </div>
+    </footer>
+<!-- WhatsApp Call Button -->
+<a href="https://wa.me/34632277238" 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   aria-label="Trucar per WhatsApp">
+   📞
+</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
